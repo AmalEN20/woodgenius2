@@ -11,6 +11,7 @@ import FooterLink from './FooterLink'
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
+
 const Footer = () => {
 
   const StackColumn = styled(Stack) (() => ({
@@ -43,27 +44,30 @@ const Footer = () => {
     }}
     >
       <StackColumn>
-        <FooterTitle text={'address'} />
-        <FooterLink 
+        <FooterTitle text={'Contact'} />
+        {/* <FooterLink 
         text={'address (needs to be updated)'} 
+        /> */}
+        <FooterLink 
+        text={'Number / +1 (425) 996-16-06'} 
         />
         <FooterLink 
-        text={'number (needs to be updated)'} 
-        />
-        <FooterLink 
-        text={'email (needs to be updated)'} 
+        text={'email / Woodgenius1@gmail.com'} 
         />
       </StackColumn>
       
       <StackColumn>
-        <FooterTitle text={'our services'} />
-        <FooterLink text={'read more'} />
+        <FooterTitle  text={'our services'} />
+        
+        <FooterLink                                          component={Link} 
+                    to={'/about'}
+                    variant='outlined'text={'Read More'} />
       </StackColumn>
 
-      <StackColumn>
+      {/* <StackColumn>
         <FooterTitle text={'our company'} />
         <FooterLink text={'needs to be updated'} />
-      </StackColumn>
+      </StackColumn> */}
 
       <StackColumn>
         <FooterTitle text={'WoodGenius'} />

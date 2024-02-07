@@ -39,10 +39,10 @@ const itemList = [
       text: "About",
       to: "/about"
     },
-    {
-        text: "Contact",
-        to: "/contact"
-    }
+    // {
+    //     text: "Contact",
+    //     to: "/contact"
+    // }
 ];
 
 
